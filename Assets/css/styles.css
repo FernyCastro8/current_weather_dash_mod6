@@ -1,0 +1,26 @@
+/*RESET*/ 
+
+
+#app-title {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.parent-container {
+    display: flex;
+    
+}
+
+.left-col {
+    flex: 1 1 30%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.right-col {
+    flex: 1 1 70%;
+    border: 2px solid green;
+
+}
