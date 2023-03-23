@@ -16,7 +16,7 @@ geoCodeURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=$
   $.get(geoCodeURL).then(function(data) {
     console.log(data[0].lat);
     console.log(data[0].lon);
-
+ 
   });
 
 }

@@ -6,22 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/css/styles.css">
-    <title>Weather Dash App</title>
+    <title>Weather Dashboard App</title>
 </head>
 
 <body>
-    <header id="app-title">Weather Dash App</header>
-
+    <header id="app-title">
+        <h1>Weather Dashboard App</h1>
+    </header>
+    
     <div class="parent-container">
-
+        
+        
         <div class="left-col">
             <input type="text" id="city-input" placeholder="type city name">
             <button id="search-button">Search For City</button>
         </div>
-
-        <div class="right-col">right</div>
+        
+        <!-- bootstrap added -->
+        <div class="right-col">
+            <div class="padding">
+                <div class="col-lg-6">
+                    <div class="card"> <img class="" src="https://i.imgur.com/a9sHoeY.jpg" alt="Card image cap">
+                        <div class="card-img-overlay" style="height:110px;">
+                            <h3 class="card-title text-white m-b-0 dl">New Delhi</h3> <small
+                                class="card-text text-white font-light">Sunday 15 march</small>
+                        </div>
+                        <div class="card-body weather-small">
+                            <div class="row">
+                                <div class="col-8 b-r align-self-center">
+                                    <div class="d-flex">
+                                        <div class="display-6 text-info"><i class="mdi mdi-weather-pouring"></i></div>
+                                        <div class="m-l-20">
+                                            <h1 class="font-light text-info m-b-0">32<sup>0</sup></h1> <small>Sunny
+                                                Rainy day</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h1 class="font-light m-b-0">25<sup>0</sup></h1> <small>Tonight</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 

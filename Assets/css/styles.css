@@ -1,5 +1,15 @@
 /*RESET*/ 
 
+html, body {
+    height: 100%;
+    background-color: rgba(82, 146, 195, 0.536);
+}
+
+#app-title {
+    font-size: larger;
+    margin: 20%;
+    text-decoration: white;
+}
 
 #app-title {
     text-align: center;
@@ -11,16 +21,42 @@
     
 }
 
+
+/* left column */
 .left-col {
     flex: 1 1 30%;
-    border: 2px solid red;
+    border: 2px none   ;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 20px;
+    padding: 20px;
 }
 
+#city-input {
+    text-align: center;
+    border-radius: 15px;
+    margin: 5px 20px 5px 20px;
+    padding: 5px;
+}
+
+#search-button {
+    text-align: center;
+    border-radius: 15px;
+    margin: 5px 20px 5px 20px;
+    padding: 5px;
+}
+
+#search-button:hover {
+    background-color:rgba(237, 231, 231, 0.749);
+}
+
+
+
+/* right-column*/
 .right-col {
     flex: 1 1 70%;
-    border: 2px solid green;
+    border: 2px none;
+} 
 
-}
+
