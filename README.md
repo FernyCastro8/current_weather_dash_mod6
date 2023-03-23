@@ -9,21 +9,15 @@
 ---------------------------------------------------------------------
 
 GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
 
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
+The app is design to fo the user to search for a city their curent weather condition based on their current location.
 
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+Presented with current and future conditions for that city and that city is added to the search history.
+Aswell as the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed.
 
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+The app is to show a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity.
 
-
-                            \\\\    \\\  Needs some work done!  \\\ \\\
-
+WHEN the user clicks on a city in the search history, app its to present with current and future conditions for that city again.
 
 
 ---------------------------------------------------------------------
@@ -31,11 +25,11 @@ THEN I am again presented with current and future conditions for that city
 ## Websites 
 
 - Github
-
+git@github.com:FernyCastro8/current_weather_dash_mod6.git
 
 
 - URL
-
+https://fernycastro8.github.io/current_weather_dash_mod6/
 
 
 - [Screen Shot]
