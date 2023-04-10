@@ -25,7 +25,7 @@ WHEN the user clicks on a city in the search history, app its to present with cu
 ## Websites 
 
 - Github
-git@github.com:FernyCastro8/current_weather_dash_mod6.git
+https://github.com/FernyCastro8/current_weather_dash_mod6.git
 
 
 - URL
