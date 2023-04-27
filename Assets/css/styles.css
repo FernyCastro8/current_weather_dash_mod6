@@ -1,6 +1,6 @@
 /*RESET*/ 
 
-html, body {
+html body {
     height: 100%;
     background-color: rgba(82, 146, 195, 0.536);
 }
@@ -21,11 +21,17 @@ html, body {
     
 }
 
+/* Header */
+h1 {
+    background-color: rgba(27, 49, 114, 0.215);
+    margin-top: 0%;
+}
 
 /* left column */
-.left-col {
-    flex: 1 1 30%;
-    border: 2px none   ;
+#left-col {
+    flex: 1 1 25%;
+    border: 2px solid black;
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -36,6 +42,8 @@ html, body {
 #city-input {
     text-align: center;
     border-radius: 15px;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.759);
     margin: 5px 20px 5px 20px;
     padding: 5px;
 }
@@ -43,20 +51,42 @@ html, body {
 #search-button {
     text-align: center;
     border-radius: 15px;
+    border: none;
+    background-color: rgba(241, 238, 238, 0.393);
     margin: 5px 20px 5px 20px;
     padding: 5px;
 }
 
 #search-button:hover {
-    background-color:rgba(237, 231, 231, 0.749);
+    background-color:rgba(255, 255, 255, 0.759);
 }
 
 
 
 /* right-column*/
-.right-col {
+#right-col {
+    display: flex;
     flex: 1 1 70%;
-    border: 2px none;
-} 
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+}
 
+.daily-forcast {
+    display: flex;
+    flex-direction: column 1;
+    text-align: right;
+    padding: 0%;
+}
 
+.current-weather{
+    padding: auto;
+}
+
+.five-day-forecast {
+
+    margin-top: 10%;
+}
