@@ -48,8 +48,7 @@ function search5dayForcast() {
   })
 };
 
-localStorage.setItem('Search')
-document.getElementById('search-button').innerHTML = localStorage.getItem('Search')
+
 
 searchButton.on('click', searchCurrentWeather);
 searchButton.on('click', search5dayForcast);
