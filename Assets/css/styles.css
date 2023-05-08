@@ -1,4 +1,4 @@
-/*RESET*/ 
+/*RESET*/
 
 html body {
     height: 100%;
@@ -18,7 +18,7 @@ html body {
 
 .parent-container {
     display: flex;
-    
+
 }
 
 /* Header */
@@ -43,7 +43,7 @@ h1 {
     text-align: center;
     border-radius: 15px;
     border: none;
-    background-color:rgba(255, 255, 255, 0.759);
+    background-color: rgba(255, 255, 255, 0.759);
     margin: 5px 20px 5px 20px;
     padding: 5px;
 }
@@ -58,9 +58,19 @@ h1 {
 }
 
 #search-button:hover {
-    background-color:rgba(255, 255, 255, 0.759);
+    background-color: rgba(255, 255, 255, 0.759);
 }
 
+#search-history-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    /* background-color: rgba(255, 255, 255, 0.759); */
+    margin: 5px 20px 5px 20px;
+    padding: 5px;
+}
 
 
 /* right-column*/
@@ -82,11 +92,17 @@ h1 {
     padding: 0%;
 }
 
-.current-weather{
-    padding: auto;
+.current-weather {
+    padding: 0 0 0 0;
+    margin: 2% 30% 2% 30%;
+    background-color: white;
 }
 
 .five-day-forecast {
+    padding: 0 0 0 0;
+    margin-top: 5%;
+}
 
-    margin-top: 10%;
+.card {
+    margin: 2% 30% 2% 30%;
 }

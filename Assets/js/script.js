@@ -12,8 +12,13 @@ var FiveDayForcast = $('.five-day-forecast');
 // city URL needs this param q={city name}
 // forecast URL needs params lat={latitude} & lon={longitude}
 
+
+// function searchCurrentWeather() to get current weather
 function searchCurrentWeather() {
   var city = cityInput.val();
+  var cities = JSON.parse(localStorage.getItem('cities')) || [];
+  cities.push(city);
+  localStorage.setItem('cities', JSON.stringify(cities));
 
   $.get(cityURL + '&q=' + city + '&units=imperial').then((data) => {
     currentWeather.html(`
@@ -25,7 +30,23 @@ function searchCurrentWeather() {
   });
 }
 
+// funtion to save to local storage
+function savedCities() {
+  var cities = JSON.parse(localStorage.getItem('cities')) || [];
+  var html = "";
+  for (var i = 0; i < cities.length; i++) {
+    html += `<ul>${cities[i]}</ul>`;
+  }
+  $('#search-history-list').html(html);
+}
 
+$(document).ready(function () {
+  savedCities();
+});
+
+
+
+// function Seach5dayForcast() to get 5 day forcast
 function search5dayForcast() {
   var city = cityInput.val();
 
@@ -44,12 +65,13 @@ function search5dayForcast() {
       html.push(card)
     }
     console.log(html.join(''))
-      FiveDayForcast.append(html.join(''))
+    FiveDayForcast.append(html.join(''))
   })
 };
 
-localStorage.setItem('Search')
-document.getElementById('search-button').innerHTML = localStorage.getItem('Search')
+
+
+
 
 searchButton.on('click', searchCurrentWeather);
 searchButton.on('click', search5dayForcast);

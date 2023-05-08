@@ -17,31 +17,30 @@
     <header id="app-title">
         <h1>Weather Dashboard App</h1>
     </header>
-    
+
     <div class="parent-container">
-        
+
         <!--    LEFT COLUMN     -->
-        
+
         <div id="left-col">
             <input type="text" id="city-input" placeholder="Type city name">
             <button id="search-button">Search</button>
 
-            <!-- <select value="option-1">option 1</select>
-            <select value="option-2">option 2</select>
-            <select value="option-3">option 3</select> -->
+            <div class="search-history">
+                <h7>Search History</h7>
+                <ul id="search-history-list"></ul>
+            </div>
         </div>
 
         <!--    RIGHT COLUMN     -->
         <div id="right-col">
             <h2 class="current-city"></h2>
             <p id="temp"></p>
-            
+
             <div class="current-weather">current weather</div>
 
-
             <div class="five-day-forecast">5 Day Forcast</div>
-            
-    
+
         </div>
 
     </div>
