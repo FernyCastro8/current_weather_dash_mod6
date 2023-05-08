@@ -15,58 +15,58 @@ var FiveDayForcast = $('.five-day-forecast');
 
 // function searchCurrentWeather() to get current weather
 function searchCurrentWeather() {
-  var city = cityInput.val();
-  var cities = JSON.parse(localStorage.getItem('cities')) || [];
-  cities.push(city);
-  localStorage.setItem('cities', JSON.stringify(cities));
+    var city = cityInput.val();
+    var cities = JSON.parse(localStorage.getItem('cities')) || [];
+    cities.push(city);
+    localStorage.setItem('cities', JSON.stringify(cities));
 
-  $.get(cityURL + '&q=' + city + '&units=imperial').then((data) => {
-    currentWeather.html(`
+    $.get(cityURL + '&q=' + city + '&units=imperial').then((data) => {
+        currentWeather.html(`
       <p>${data.name}</p>
       <p>Temperature ${data.main.temp} °F</p>
       <p>Humidity ${data.main.humidity} %</p>
       <p>Wind ${data.wind.speed} m/h`);
-    console.log(data);
-  });
+        console.log(data);
+    });
 }
 
 // funtion to save to local storage
 function savedCities() {
-  var cities = JSON.parse(localStorage.getItem('cities')) || [];
-  var html = "";
-  for (var i = 0; i < cities.length; i++) {
-    html += `<ul>${cities[i]}</ul>`;
-  }
-  $('#search-history-list').html(html);
+    var cities = JSON.parse(localStorage.getItem('cities')) || [];
+    var html = "";
+    for (var i = 0; i < cities.length; i++) {
+        html += `<ul>${cities[i]}</ul>`;
+    }
+    $('#search-history-list').html(html);
 }
 
 $(document).ready(function () {
-  savedCities();
+    savedCities();
 });
 
 
 
 // function Seach5dayForcast() to get 5 day forcast
 function search5dayForcast() {
-  var city = cityInput.val();
+    var city = cityInput.val();
 
-  $.get(fiveURL + '&q=' + city + '&units=imperial').then((data) => {
-    var html = []
-    for (let index = 0; index < data.list.length; index = index + 8) {
-      console.log(data.list[index])
-      const card = `
+    $.get(fiveURL + '&q=' + city + '&units=imperial').then((data) => {
+        var html = []
+        for (let index = 0; index < data.list.length; index = index + 8) {
+            console.log(data.list[index])
+            const card = `
       <div class='card'>
     <p>Temperature ${data.list[index].main.temp}
     <p>Humidity ${data.list[index].main.humidity} %</p>
     <p>Wind${data.list[index].wind.speed} m/h </p>
     </div>
     `
-      console.log(card);
-      html.push(card)
-    }
-    console.log(html.join(''))
-    FiveDayForcast.append(html.join(''))
-  })
+            console.log(card);
+            html.push(card)
+        }
+        console.log(html.join(''))
+        FiveDayForcast.append(html.join(''))
+    })
 };
 
 
