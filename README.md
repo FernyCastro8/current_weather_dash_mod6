@@ -48,14 +48,24 @@ Copyright (c) 2023 Ferny Castro
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
+
 ---
 ## 
+
+- Github
+https://github.com/FernyCastro8/current_weather_dash_mod6.git
+
 
 [Github Repository 🔗](git@github.com:FernyCastro8/current_weather_dash_mod6.git)
 
 
 
+
 [App URL 🔗](https://fernycastro8.github.io/current_weather_dash_mod6/)
+
+- [Screen Shot]
+![Screen Shot 2023-04-27 at 7 18 50 PM](https://user-images.githubusercontent.com/124219457/235010712-d0d440ef-764f-46ba-a927-e705ffdb99cc.png)
+
 
 [Demo](#Demo)
 
