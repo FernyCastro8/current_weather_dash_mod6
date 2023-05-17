@@ -49,11 +49,9 @@ Copyright (c) 2023 Ferny Castro
 
 
 ---
-## 
+## Demo
 
 [Github Repository 🔗](https://github.com/FernyCastro8/current_weather_dash_mod6.git)
-
-## Demo
 
 [App URL 🔗](https://fernycastro8.github.io/current_weather_dash_mod6/)
 
